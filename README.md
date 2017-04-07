@@ -20,7 +20,8 @@ iOS 10.3新增了应用内更换APP Icon的功能，今天我们就来简单学�
 二. 依照上面的Info.plist来配置CFBundleAlternateIcons<br>
     被切换的图标图片必须放在工程里面，放在Assets无效。<br>
 三. 使用代码进行切换
-    ```Objective-c
+
+    ``` Objective-c
     //判断是否支持切换图标
     if ([UIApplication sharedApplication].supportsAlternateIcons) {
        [[UIApplication sharedApplication] setAlternateIconName:@"Your Icon File Name" completionHandler:^(NSError * _Nullable error) {
